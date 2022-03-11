@@ -1,8 +1,12 @@
 #include <stdio.h>
-#include <string.h>
+
+/*
+ * main : uses puts to print to standard output
+ *
+ */
 
 int main(void)
 {
-	puts("\"programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
