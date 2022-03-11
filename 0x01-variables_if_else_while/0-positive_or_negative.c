@@ -7,7 +7,7 @@
  * it executes and prints it 
  * Retun: Always 0 (success)
  */
-main(void)
+int main(void)
 {
 	int n;
 
