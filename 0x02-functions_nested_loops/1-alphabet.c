@@ -3,19 +3,16 @@
  * main - prints the alphabet in lowercase, followed by an new line
  * Return: Always 0 (success)
  */
-int main(void)
+void print_alphabet(void)
 {
-  void print_alphabet(void)
-  {
-    char ch ='a';
+	char ch = 'a';
 
-    while (ch <= 'z')
-      {
-	_putchar(ch);
-	ch++;
-      }
-    _putchar('\n');
+	while (ch <= 'z')
+	{
+		_putchar(ch);
+		ch++;
+	}
+	_putchar('\n');
 
-    return (0);
-  }
+	return;
 }
