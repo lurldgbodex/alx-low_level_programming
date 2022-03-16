@@ -4,5 +4,7 @@
  */
 int  _abs(int)
 {
+	int r;
+
 	_putchar(r);
 }
