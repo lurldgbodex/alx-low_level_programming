@@ -13,5 +13,5 @@ int mul(int a, int b)
 
 	_putchar(result);
 
-	return (0);
+	return (result);
 }
