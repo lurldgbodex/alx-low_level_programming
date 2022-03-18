@@ -4,7 +4,6 @@
  * more_numbers - prints 10 times the number
  * followed by a new line
  */
-
 void more_numbers(void)
 {
 	int n, m;

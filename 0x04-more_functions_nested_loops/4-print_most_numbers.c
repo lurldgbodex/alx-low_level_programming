@@ -5,7 +5,6 @@
  * except or 2 and 4
  * followed by a new line
  */
-
 void print_most_numbers(void)
 {
 	int n;
@@ -17,6 +16,5 @@ void print_most_numbers(void)
 			_putchar(n);
 		}
 	}
-
 	_putchar('\n');
 }

@@ -4,7 +4,6 @@
  * print_line - draws a straight line to terminal
  * @n: number of times
  */
-
 void print_line(int n)
 {
 	if (n <= 0)
