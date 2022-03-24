@@ -9,16 +9,16 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-  int counter, cmpval;
+       	int counter, cmpval;
 
-  counter = 0;
+ 	counter = 0;
 
-  while (s1[counter] == s2[counter] && s1[counter] != '\0')
-    {
-      counter++;
-    }
+  	while (s1[counter] == s2[counter] && s1[counter] != '\0')
+    	{
+      		counter++;
+    	}
 
-  cmpval = s1[counter] - s2[counter];
+  	cmpval = s1[counter] - s2[counter];
 
-  return (cmpval);
+  	return (cmpval);
 }
