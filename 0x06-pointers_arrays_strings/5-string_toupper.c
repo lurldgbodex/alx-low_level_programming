@@ -9,7 +9,7 @@
 char *string_toupper(char *x)
 {
 	int i = 0;
-	char *upperstring;
+	char upperstring [50];
 
 	while (x[i] != '\0')
 	{
