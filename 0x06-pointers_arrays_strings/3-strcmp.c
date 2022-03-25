@@ -5,20 +5,17 @@
  * @s1: string 1
  * @s2: string 2
  *
- * Return: -1 is string less than the other, 1 if greater than the other and 0 if equal
+ * Return: The differences between the s1 and s22
  */
 int _strcmp(char *s1, char *s2)
 {
-       	int counter, cmpval;
+	int i;
 
- 	counter = 0;
-
-  	while (s1[counter] == s2[counter] && s1[counter] != '\0')
-    	{
-      		counter++;
-    	}
-
-  	cmpval = s1[counter] - s2[counter];
-
-  	return (cmpval);
+	while (s1[i] == s2[i])
+	{
+		if (s1[i] == '\0' && s2[i] == '\0')
+			break;
+		i++;
+	}
+	return (s1[i] - s2[i]);
 }
