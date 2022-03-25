@@ -13,7 +13,7 @@ char *string_toupper(char *x)
 
 	while (x[i] != '\0')
 	{
-		upperstring[i] = x[ ] - 32;
+		upperstring[i] = x[i] - 32;
 		i++;
 	}
 
