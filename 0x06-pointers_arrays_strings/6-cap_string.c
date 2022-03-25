@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *cap_string - capitalize all worlds aof a string
+ * cap_string - capitalize all worlds aof a string
  * @s: string to modify
  *
  * Return: resulting string
