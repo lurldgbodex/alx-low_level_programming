@@ -9,12 +9,13 @@
 char *string_toupper(char *x)
 {
 	int i = 0;
+	char *upperstring;
 
 	while (x[i] != '\0')
 	{
-		x[i] = x[ ] - 32;
+		upperstring[i] = x[ ] - 32;
 		i++;
 	}
 
-	return (x)
+	return (upperstring)
 }
