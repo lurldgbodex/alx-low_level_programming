@@ -1,1 +1,2 @@
-0-memset writes a function that fills memory with a constant byte
+# 0-memset.c
+write a function that fills the memory with a constant byte
