@@ -1,1 +1,1 @@
-#0x07-pointers, arrays and string
+0-memset writes a function that fills memory with a constant byte
