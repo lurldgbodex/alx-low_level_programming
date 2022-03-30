@@ -21,8 +21,10 @@ unsigned int _stspn(char *s, char *accept)
 				count ++;
 				break;
 			}
-			else
-				return (count);
+		}
+		if (!accept[j])
+		{
+			break;
 		}
 	}
 	return (count);
