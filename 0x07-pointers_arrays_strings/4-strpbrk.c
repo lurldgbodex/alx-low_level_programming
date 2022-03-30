@@ -12,7 +12,7 @@ char *_strpbrk(char *s, char *accept)
 	char *p;
 	int i, j;
 
-	p = &s;
+	p = 0;
 
 	for (i = 0; s[i] !='\0'; i++)
 	{
