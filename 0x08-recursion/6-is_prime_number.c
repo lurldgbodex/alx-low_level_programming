@@ -5,7 +5,7 @@ int prime(int n, int i);
 /**
  * is_prime_number - finds if n is an interger or not
  * @n: number to check
- * 
+ *
  * Return: 1 if n is integer and 0 otherwise
  */
 int is_prime_number(int n)
@@ -21,6 +21,8 @@ int is_prime_number(int n)
  * prime - recursively calculates if a number is prime number
  * @n: number to evaluate
  * @i: iterator
+ *
+ * Return: 1 if n is prime, 0 if not
  */
 int prime(int n, int i)
 {
