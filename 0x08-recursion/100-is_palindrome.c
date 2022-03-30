@@ -4,7 +4,7 @@ int check_pal(char *s, int i, int len);
 
 /**
  * is_palindrome - checks if  a string is palindrome
- * @s: string to check 
+ * @s: string to check
  *
  * Return: 1 if a string is palindrome and 0 if not
  */
