@@ -44,7 +44,7 @@ int wildcmp(char *s1, char *s2)
 			sum += wildcmp(s1 + 1, s2 + 1);
 		}
 		sum += status(s1 + 1, s2);
-		return (!sum);
+		return (!!sum);
 	}
 	return (0);
 }
