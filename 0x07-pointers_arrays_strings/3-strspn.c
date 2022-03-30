@@ -19,6 +19,7 @@ unsigned int _stspn(char *s, char *accept)
 			if (s[i] == accept [j])
 			{
 				count ++;
+				break;
 			}
 			else
 				break;
