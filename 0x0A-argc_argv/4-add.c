@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		}
 		result += atoi(argv[i]);
 	}
-	print("%d\n", result);
+	printf("%d\n", result);
 
 	return (0);
 }
