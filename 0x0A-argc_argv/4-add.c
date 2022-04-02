@@ -14,20 +14,23 @@ int main(int argc, char *argv[])
 
 	result = 0;
 
-	if (argc > 1)
+	if (argc < 2)
 	{
-		for (i = 1; i < argc; i++)
+		printf("0\n");
+		return (0);
+	}
+
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i] < '0' || argv[i] > '9')
+			if (argv[i][j] < '\0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
-			else
-			{
-				result += atoi(argv[i]);
-			}
 		}
+		result += atoi(argv[i]);
 	}
 	printf("%d\n", result);
 
