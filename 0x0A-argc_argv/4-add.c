@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, result;
+	int i, j, result;
 
 	result = 0;
 
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		}
 		result += atoi(argv[i]);
 	}
-	printf("%d\n", result);
+	print("%d\n", result);
 
 	return (0);
 }
