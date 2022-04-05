@@ -8,7 +8,7 @@
  *
  * Return: pointer to and null if string is null
  */
-char *strdup(char *str)
+char *_strdup(char *str)
 {
 	char *p;
 	int i, len;
@@ -22,7 +22,7 @@ char *strdup(char *str)
 
 	while (str[len])
 	{
-		len++
+		len++;
 	}
 
 	p = (char *)malloc(sizeof(char) * (len + 1));
@@ -36,7 +36,7 @@ char *strdup(char *str)
 
 	while (p[i] = str[i] != '\0')
 	{
-		i++
+		i++;
 	}
 
 	return (p);
