@@ -21,15 +21,17 @@ char *create_array(unsigned int size, char c)
 	{
 		return ('\0');
 	}
-	else
+
+	if ( p == '\0')
 	{
-		while ( i < size)
-		{
-			*(p + 1) = c;
-			i++;
-		}
-		*(p + i) = '\0';
+		return (0);
+
+	while (i < size)
+	{
+		*(p + 1) = c;
+		i++;
 	}
+	*(p + i) = '\0';
 
 	return (p);
 }
