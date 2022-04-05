@@ -29,9 +29,10 @@ char *create_array(unsigned int size, char c)
 
 	while (i < size)
 	{
-		*(p + 1) = c;
+		*(p + i) = c;
 		i++;
 	}
+
 	*(p + i) = '\0';
 
 	return (p);
