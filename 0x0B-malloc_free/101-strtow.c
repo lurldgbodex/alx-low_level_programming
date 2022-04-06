@@ -76,7 +76,7 @@ char **strtow(char *str)
 		else if (j++ == 0)
 			start = i;
 	}
-	result[k] == NULL;
+	result[k] = NULL;
 
 	return (result);
 }
