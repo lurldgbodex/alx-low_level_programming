@@ -21,14 +21,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-
 	len1 = 0;
 
 	while (s1[len1])
 	{
 		len1++;
 	}
-
 	len2 = 0;
 
 	while (s2[len2])
@@ -43,7 +41,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-
 	i = 0;
 
 	while (i < len1)
@@ -51,7 +48,6 @@ char *str_concat(char *s1, char *s2)
 		p[i] = s1[i];
 		i++;
 	}
-
 	j = 0;
 
 	while (i <= size)
