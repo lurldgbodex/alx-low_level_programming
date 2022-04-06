@@ -53,7 +53,6 @@ char **strtow(char *str)
 
 	if (result == NULL)
 		return (NULL);
-
 	for (i = 0; i <= len; i++)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
