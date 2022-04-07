@@ -4,9 +4,9 @@
 /**
  * main - prints minimum number of coins
  * @argc: number of arguments
- * @argv: array of arguments
+ * @argv: array o arguments
  *
- * Return: always 0\
+ * Return: always 0
  */
 int main(int argc, char *argv[])
 {
@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
 	i = atoi(argv[1]);
 	result = 0;
 
@@ -28,7 +27,6 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-
 	for (j = 0; j < 5 && i >= 0; j++)
 	{
 		while (i >= coin[j])
