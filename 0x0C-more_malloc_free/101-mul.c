@@ -10,15 +10,15 @@
  */
 int is_digit(char *s)
 {
-	int i = 0;
+	int i;
 
-	while (s[i])
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] < '0' || s[i] > '9')
 			return (0);
-		i++;
+		else
+			return (1);
 	}
-	return (1);
 }
 
 /**
@@ -35,6 +35,7 @@ int _strlen(char *s)
 	{
 		i++;
 	}
+
 	return (i);
 }
 
@@ -69,7 +70,6 @@ int main(int argc, char *argv[])
 
 	if (!result)
 	{
-		free(result);
 		return (1);
 	}
 	for (i = 0; i <= len1 + len2; ++i)
@@ -82,12 +82,12 @@ int main(int argc, char *argv[])
 		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 		{
 			digit2 = s2[len2] - '0';
-			carry += result[len1 + len2 + 1] + (digit1 * digit2);
-			result[len1 +len2 + 1] = carry % 10;
+			carry += result[len] + (digit1 * digit2);
+			result[len1] = carry % 10;
 			carry /= 10;
 		}
 		if (carry > 0)
-			result[len1 + len2 + 1] += carry;
+			result[len] += carry;
 	}
 	a = 0;
 
@@ -95,6 +95,7 @@ int main(int argc, char *argv[])
 	{
 		if (result[i])
 			a = 1;
+
 		if (a)
 			_putchar(result[i] + '0');
 	}
