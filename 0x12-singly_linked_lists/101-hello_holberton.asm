@@ -1,19 +1,9 @@
-section .data
-format db "%s", 10, 0
-message db "Hello, Holberton", 0
-
-section .text
-extern printf ;C function to be called
-global main ;main function
-
-main: 
-	push rbp
-	mov rdi, format
-	mov rsi, message
-	mov rax, 0 ;can be xor rax, rax
-	call printf
-	
-	pop rbp 
-	
-	mov rax
+	global	main
+	extern	printf
+main:
+	mov	edi, format
+	xor	eax, eax
+	call	printf
+	mov	eax, 0
 	ret
+format: db `Hello, Holberton\n`,0
