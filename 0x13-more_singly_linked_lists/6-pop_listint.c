@@ -6,7 +6,7 @@
  *
  * Return: the data inside the elements that waas deleted
  */
-int pop-listint(listint_t **head)
+int pop_listint(listint_t **head)
 {
 	listint_t *temp;
 	int num;
